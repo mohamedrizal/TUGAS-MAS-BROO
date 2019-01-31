@@ -1,0 +1,55 @@
+.awal img{
+    margin-top: 20px;
+    width: 200px;
+    height: 230px;
+}.awal{
+    background-image: url(../img/bg1.png);
+    color: #1CC9E4;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about{
+    background-color: #1CC9E4;
+    color: #FFF;
+}.about hr{
+    width: 250px;
+    border-top: 4px solid;
+}
+.skill{   
+    color: #1CC9E4;
+    margin-top: 20px;
+}.skill hr{
+    width: 250px;
+    border-top: 4px solid;
+}
+.portofolio{
+    margin-top: 20px;
+    color: #1CC9E4;
+}.portofolio hr{
+    width: 250px;
+    border-top: 4px solid;
+}
+.paf{
+    margin-top: 20px;
+    background-color: #1CC9E4;
+    color: #FFF;
+}.paf hr{
+    width: 250px;
+    border-top: 4px solid;
+}
+.poritem{
+    background-color: #1CC9E4;
+}.card{
+    margin-top: 20px;
+    color: #1CC9E4;
+}
+.akhir{
+    background-image: url(../img/bawah.png);
+    color: #1CC9E4;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

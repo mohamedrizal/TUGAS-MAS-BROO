@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/gaya.css">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/Chart.min.js"></script>
+</head>
+<body>
+    
+     <!--awal-->
+     <section class="awal text-center">
+        <div class="container">
+            <img src="img/me.png" alt="" class="rounded-circle">
+            <h1>Mohammad Rizal</h1>
+            <p>Front-End Web Programer | Corel Designer</p>
+        </div>
+    </section>
+    <!--akhir awal-->
+
+    <!--about-->
+    <section class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 class="text-center">
+                        About Me
+                    </h2>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6 text-center">
+                    <p>Lahir 24 Januari 2002,saya adalah seorang web Front-End Programer 
+                        dan Corel Designer,di dunia pemrograman web Front-End saya sudah berkecimpung
+                        selama 1 tahun,dan sudah menjadi designer Corel sejak 2017
+                    </p>
+                </div>
+                <div class="col-sm-6 text-center ">
+                    <p><b>Riwayat Pendidikan</b></p>
+                    <p>SMP = SMPNegeri 22 Bandung</p>
+                    <p>SMK = SMKNegeri 13 Bandung</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--akhir about-->
+
+    <!--My Skill-->
+    <section class="skill">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h2>My Skill</h2>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <canvas id="myskill">
+                    </canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---Akhir my skill-->
+
+    <!--portofolio-->
+        <section class="portofolio text-center">
+            <div class="container">
+                <h1>My Masterpiece</h1>
+                <hr>
+            </div>
+        </section>
+
+        <section class="poritem">
+            <div class="container">
+                <div class="row">
+                      <div class="col-sm-4">
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/por1.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <p class="card-text">Pudovkin Armed Store UI</p>
+                                    </div>
+                            </div>
+                      </div> 
+
+                      <div class="col-sm-4">
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/por2.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <p class="card-text">One of nine weeb aesthetic book cover design</p>
+                                    </div>
+                            </div>
+                      </div> 
+
+                      <div class="col-sm-4">
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/por3.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <p class="card-text">Tefa XBanner design</p>
+                                    </div>
+                            </div>
+                      </div> 
+                </div>
+
+
+            </div>
+        </section>
+    <!--akhir portofolio-->
+
+  
+
+
+    <script>
+		var ctx = document.getElementById("myskill").getContext('2d');
+		var myChart = new Chart(ctx, {
+			type: 'bar',
+			data: {
+				labels: ["HTML", "CSS", "Boostrap", "Vue JS", "Corel Draw",],
+				datasets: [{
+					label: '# My Skill',
+					data: [25, 24, 22, 8, 20],
+					backgroundColor: [
+					'rgba(255, 99, 132, 0.2)',
+					'rgba(54, 162, 235, 0.2)',
+					'rgba(255, 206, 86, 0.2)',
+					'rgba(75, 192, 192, 0.2)',
+					'rgba(153, 102, 255, 0.2)',
+					'rgba(255, 159, 64, 0.2)'
+					],
+					borderColor: [
+					'rgba(255,99,132,1)',
+					'rgba(54, 162, 235, 1)',
+					'rgba(255, 206, 86, 1)',
+					'rgba(75, 192, 192, 1)',
+					'rgba(153, 102, 255, 1)',
+					'rgba(255, 159, 64, 1)'
+					],
+					borderWidth: 1
+				}]
+			},
+			options: {
+				scales: {
+					yAxes: [{
+						ticks: {
+							beginAtZero:true
+						}
+					}]
+				}
+			}
+		});
+	</script>
+</body>
+</html>
